@@ -9,6 +9,11 @@
       "id": 2,
       "content":"Some content here 2",
       "author": "Yanko"
+    },
+    {
+      "id": 3,
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora tempore, facere aperiam voluptatem ex suscipit saepe. Nesciunt, dolorum, asperiores tempora corrupti sapiente placeat fuga minus vero consequatur itaque at?",
+      "author":"Bai Mitio"
     }
   ]
 }
