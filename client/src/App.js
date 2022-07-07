@@ -1,10 +1,13 @@
 import { Component } from 'react';
+import { Route, Link, NavLink, Redirect, Switch, Routes } from 'react-router-dom';
 
 import * as postService from './services/postService';
 
-import Header from './components/Header/Header';
-import Menu from './components/Menu/Menu';
-import Main from './components/Main/Main';
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Main from './components/Main';
+import About from './components/About';
+import ContactUs from './components/ContactUs';
 import style from './App.module.css';
 
 //      ul>li.listItem*11>a[href=#]{Going to $ }
@@ -58,6 +61,10 @@ class App extends Component{
         <Header/>
         <div className={style.container}>
           <Menu onMenuItemClick={this.onMenuItemClick.bind(this)}/>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+          </Routes>
           <Main posts={this.getPosts()}/>
         </div>
       </div>
