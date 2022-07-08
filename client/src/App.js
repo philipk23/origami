@@ -64,8 +64,8 @@ class App extends Component{
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/" element={<Main posts={this.getPosts()}/>}/>
           </Routes>
-          <Main posts={this.getPosts()}/>
         </div>
       </div>
     )
