@@ -5,7 +5,7 @@ const NavigationItem = ({
 }) => {
   return (
     <li className="listItem">
-      <a href="#" className={style.navListItem}>{children}</a>
+      <span className={style.navListItem}>{children}</span>
     </li>
   )
 }

@@ -62,7 +62,7 @@ class App extends Component{
         <div className={style.container}>
           <Menu onMenuItemClick={this.onMenuItemClick.bind(this)}/>
           <Routes>
-            <Route path="/about" element={<About />} />
+            <Route path="/about/:name" element={<About />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/" element={<Main posts={this.getPosts()}/>}/>
           </Routes>
